@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/estilo.css')}}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Data frame</title>
+</head>
+
+<body class="body">
+    <div class="encabezado">
+        <h1>Vacunados Por Entidad Territorial Covid-19</h1>
+    </div>
+    <div class="contenido">
+        <p>
+            Conozca la cantidad de personas vacunadas por departamento 
+        </p>
+    </div>
+    <script src="{{url_for('static',filename='js/generar_filtro.js')}}"></script>
+    
+    <form  id="datos" ;method="POST" >
+        <div id="contenedor" class="filtros">
+            <label  for=""> Entidad Territorial </label>
+            <select id="entidad_territorial" ; name="entidad_territorial">
+                <option value=""></option>
+                <option value="Todos">Todos</option>
+                {%for i in programas%}
+                <option value="{{i}}">{{i}}</option>
+                {%endfor%}
+            </select>
+            <label for="">Grupo de edad</label>
+            <select id='year'; name='year' >
+                <option value=""></option>
+                <option value="Todos">Todos</option>
+                {%for i in edad%}
+                    <option value="{{i}}">{{i}}</option>
+                {%endfor%}
+            </select>
+            <br>    
+        </div>
+        <div id="boton_filtro">
+            <input id="pruebab" type="submit"; value="Filtar">
+        </div>
+    </form>
+    <div class="resultados">
+        <div id="tabla" >
+        </div>
+    </div>
+    <div id="limpiar_b">
+        <input id="limpiar" type="button"; value="Limpiar">
+    </div>
+</body>
+
+</html>

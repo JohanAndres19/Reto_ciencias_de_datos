@@ -1,0 +1,80 @@
+.body{
+    background-color: #dddcdc;
+}
+.encabezado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenido{
+    justify-content: center;
+    display: flex;
+    margin: 20px;
+    /* transform: translateY(-300%); */
+    /* transform: translateX(15%); */
+}
+
+
+.filtros{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    /* position: relative; */
+    padding: 3%;
+    transform: translateY(-25px);
+    margin-top: 30px;
+}
+.resultados{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin: 50px;
+    /* transform: translateX(20px); */
+}
+
+#boton_filtro{
+    justify-content: center;
+    /* padding-left: 300px; */
+    display: flex;
+}
+#pruebab{
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* position: relative; */
+    transform: translateY(-40%);
+    font-family: Luminari;
+    /*transform: translateX(360px);*/
+    width: 100px;
+    height: 30px;
+    background-color:  #53c796;
+    border-radius: 35px;
+}
+#limpiar_b{
+    display: flex;
+    justify-content: center;
+}
+#limpiar{
+    justify-content: center;
+    transform: translateY(-40%);
+    font-family: Luminari;
+    width: 100px;
+    height: 30px;
+    background-color:  #53c796;
+    border-radius: 35px;
+}
+#contenedor  {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+#contenedor label {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#tabla{
+    table-layout: auto;
+    border-spacing: 5px;
+    align-items: center;
+}
