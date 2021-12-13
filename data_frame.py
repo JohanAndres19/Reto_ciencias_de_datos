@@ -21,7 +21,7 @@ class Data_frame:
             'n_mero_acumulado_de_esquema':'sum'
             })
             return aux
-        elif valores[0]!='Todas' and 'entidad_territorial' in keys:
+        elif valores[0]!='Todos' and 'entidad_territorial' in keys:
             df = self.data_frame.groupby(['entidad_territorial','municipio'],as_index=False).agg({
             'n_mero_acumulado_de_1_dosis':'sum',
             'n_mero_acumulado_de_esquema':'sum'
