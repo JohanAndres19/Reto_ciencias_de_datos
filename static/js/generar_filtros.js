@@ -24,7 +24,7 @@ $(document).ready(function(){
         }
         if(contador>=1){
             $('#pruebab').show(100);
-            console.log(contador)
+            console.log(contador,lista)
         }
         
     });
