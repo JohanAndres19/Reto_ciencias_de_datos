@@ -26,7 +26,6 @@ $(document).ready(function(){
             $('#pruebab').show(100);
             console.log(contador)
         }
-        $('#contenedor select').prop('disabled',true);
         
     });
     function ajax_login(){

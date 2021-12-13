@@ -14,6 +14,7 @@ def before_request():
     cliente = Socrata("www.datos.gov.co", None)
     resultado = cliente.get("8cgj-t5ds",limit=10100)
     Dframe.Set_dataframe(pd.DataFrame.from_records(resultado))
+    print(Dframe.Get_programs())
     
 
 
